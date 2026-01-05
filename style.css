@@ -1,0 +1,385 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+}
+
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #f095a1;
+}
+
+/* Hero Section */
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px;
+    min-height: 80vh;
+}
+
+.intro-text {
+    width: 50%;
+}
+
+.intro-text h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.intro-text h1 span {
+    color: maroon;
+}
+
+.intro-text h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+
+.intro-text p {
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #9e1b9e;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+}
+
+.btn:hover {
+    background-color: #6f552d;
+}
+
+/* Image */
+.intro-image {
+    width: 40%;
+    text-align: center;
+}
+
+.intro-image img {
+    width: 380px;
+    border-radius: 380%;
+    border: 6px solid #e0c097;
+}
+
+a img {
+  width: 50px;   /* saiz gambar */
+  height: 50px;
+  border-radius: 50%; /* bulatkan */
+  transition: transform 0.3s;
+}
+
+a img:hover {
+  transform: scale(1.1); /* efek hover */
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+
+.education-timeline {
+    background: #fff0f6;
+    padding: 70px 12%;
+    position: relative;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.education-timeline h2 {
+    text-align: center;
+    font-size: 38px;
+    color: #5a0f2e;
+    margin-bottom: 60px;
+}
+
+/* garis timeline */
+.education-timeline::before {
+    content: "";
+    position: absolute;
+    left: 60px;
+    top: 150px;
+    width: 4px;
+    height: calc(100% - 180px);
+    background: linear-gradient(#e48bb2, #f6b1cf);
+    border-radius: 5px;
+}
+
+/* setiap item */
+.timeline-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+/* gambar bulat */
+.timeline-item img {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    background: white;
+    padding: 6px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.18);
+    z-index: 2;
+    object-fit: cover;
+}
+
+
+/* kotak content */
+.timeline-item .content {
+    background: white;
+    margin-left: 35px;
+    padding: 22px 28px;
+    border-radius: 18px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* hover effect */
+.timeline-item .content:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.18);
+}
+
+/* text */
+.timeline-item h3 {
+    color: #7a1f4c;
+    margin-bottom: 6px;
+    font-size: 18px;
+}
+
+.timeline-item p {
+    font-size: 14px;
+    color: #555;
+}
+
+
+
+/* ===== GALLERY SECTION ===== */
+
+.gallery-section {
+    padding: 40px 60px;
+    text-align: center;
+}
+
+.gallery-section h1 {
+    font-size: 36px;
+    margin-bottom: 5px;
+}
+
+.gallery-section .intro {
+    color: #777;
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+
+/* Gallery grid */
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background: #fff0f5;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    color: #333;
+}
+
+h1 {
+    color: #ff69b4;
+    margin-bottom: 30px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #ffe4e1 url('pattern.png') repeat; /* subtle pattern */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    min-height: 100vh;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #ff1493;
+    margin-bottom: 30px;
+    text-align: center;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.2);
+}
+
+/* Container grid */
+.hobby-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    width: 90%;
+    justify-items: center;
+    align-items: start;
+}
+
+/* Cards */
+.hobby-card {
+    background: #fff;
+    border-radius: 20px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+
+.hobby-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 30px rgba(0,0,0,0.3);
+}
+
+/* Image box rectangle */
+.image-box {
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    background: #ffe4e1;
+}
+
+.image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* cover the rectangle */
+}
+
+h2 {
+    font-size: 1.2rem;
+    color: #ff69b4;
+    margin: 0 0 10px 0;
+}
+
+audio {
+    width: 90%;
+    margin-top: 10px;
+}
+
+/* ===== Gallery Styles (add this only) ===== */
+
+/* Gallery container as UL */
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    width: 90%;
+    justify-items: center;
+    align-items: start;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Each gallery-card as LI */
+.gallery-card {
+    background: #fff;
+    border-radius: 20px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+
+.gallery-card:hover {
+    transform: scale(1.08) rotate(0deg);
+    box-shadow: 0 20px 30px rgba(0,0,0,0.3);
+    z-index: 5;
+}
+
+/* Figure and figcaption */
+.gallery-card figure {
+    margin: 0;
+}
+
+.gallery-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.gallery-card figcaption {
+    font-size: 1.2rem;
+    color: #ff1493;
+    margin-top: 10px;
+}
+
+/* Optional: slight rotation for playful effect */
+.gallery-card:nth-child(odd) {
+    transform: rotate(-2deg);
+}
+
+.gallery-card:nth-child(even) {
+    transform: rotate(2deg);
+}
+
+.contact-social {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.contact-social a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    background: #ffe6f0;
+    padding: 12px 18px;
+    border-radius: 12px;
+    color: #63082e;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.contact-social a i {
+    font-size: 22px;
+}
+
+.contact-social a:hover {
+    background: #ffb3d1;
+    transform: translateY(-3px);
+}
+
+
